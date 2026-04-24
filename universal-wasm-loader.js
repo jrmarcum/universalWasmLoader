@@ -1,3 +1,4 @@
+// @ts-self-types="./universal-wasm-loader.d.ts"
 /**
  * A universal Wasm loader that mimics ESM import behavior.
  * Works in: Node.js (18+), Bun, Deno, and all modern Browsers.
