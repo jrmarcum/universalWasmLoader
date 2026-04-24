@@ -1,6 +1,6 @@
 {
   "name": "@jrmarcum/universal-wasm-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "exports": "./universal-wasm-loader.js",
   "publish": {
     "include": [
