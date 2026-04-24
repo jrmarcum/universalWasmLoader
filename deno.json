@@ -1,0 +1,11 @@
+{
+  "name": "@your-scope/universal-wasm-loader",
+  "version": "1.0.0",
+  "exports": "./universal-wasm-loader.js",
+  "publish": {
+    "include": [
+      "universal-wasm-loader.js",
+      "README.md"
+    ]
+  }
+}
