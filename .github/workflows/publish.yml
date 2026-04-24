@@ -24,3 +24,6 @@ jobs:
 
       - name: Publish to JSR
         run: npx jsr publish
+
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v4.1.0
