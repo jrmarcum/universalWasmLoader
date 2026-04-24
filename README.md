@@ -5,7 +5,7 @@ A lightweight, universal WebAssembly loader for JavaScript, TypeScript, and the 
 ## Installation
 
 ```bash
-npx jsr add @your-scope/universal-wasm-loader
+npx jsr add @jrmarcum/universal-wasm-loader
 ```
 
 ## Usage

@@ -1,5 +1,5 @@
 {
-  "name": "@your-scope/universal-wasm-loader",
+  "name": "@jrmarcum/universal-wasm-loader",
   "version": "1.0.0",
   "exports": "./universal-wasm-loader.js",
   "publish": {

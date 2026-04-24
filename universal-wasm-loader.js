@@ -3,7 +3,7 @@
  * Works in: Node.js (18+), Bun, Deno, and all modern Browsers.
  * 
  * @param {string | URL} wasmPath - The path or URL to the .wasm file.
- * @param {WebAssembly.Imports} [importObject={}] - Optional imports for the Wasm instance.
+ * @param {WebAssembly.Imports} [importObject] - Optional imports for the Wasm instance.
  * @returns {Promise<WebAssembly.Exports>} The exported members of the WebAssembly instance.
  * 
  * @example
@@ -20,7 +20,7 @@ export async function wasmImport(wasmPath, importObject = {}) {
     try {
       const response = await fetch(url);
       ({ instance } = await WebAssembly.instantiateStreaming(response, importObject));
-    } catch (e) {
+    } catch (_e) {
       // Fallback for environments where fetch/streaming might fail (some Node setups)
       const bytes = await (await fetch(url)).arrayBuffer();
       ({ instance } = await WebAssembly.instantiate(bytes, importObject));
