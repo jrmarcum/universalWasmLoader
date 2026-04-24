@@ -16,13 +16,12 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Set up Deno
-        uses: denoland/setup-deno@v1
+        uses: denoland/setup-deno@v2
         with:
-          deno-version: v1.x # JSR publishing is built into Deno
+          deno-version: v2.x
 
       - name: Run linter
         run: deno lint
 
       - name: Publish to JSR
-        # This command uses the id-token to prove the build happened on GitHub
-        run: npx jsr publish
+        run: deno publish
